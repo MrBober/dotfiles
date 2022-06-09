@@ -60,7 +60,9 @@ include "%L"
 
 # arrows
 <Multi_key> <a> <k> : "↑"  U2191    # up arrow
-<Multi_key> <a> <h> : "←"  U2191    # left arrow
-<Multi_key> <a> <l> : "→"  U2191    # right arrow
-<Multi_key> <a> <j> : "↓"  U2191    # down arrow
+<Multi_key> <a> <h> : "←"  U2190    # left arrow
+<Multi_key> <a> <l> : "→"  U2192    # right arrow
+<Multi_key> <a> <j> : "↓"  U2193    # down arrow
 
+# math symbols
+<Multi_key> <s> <q> : "√"  U221A    # radical sign

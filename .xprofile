@@ -9,3 +9,4 @@ ibus-daemon -drxR
 lxsession-xdg-autostart
 ~/.fehbg &
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+conky -d &

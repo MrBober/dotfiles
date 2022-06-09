@@ -12,7 +12,7 @@ super + Return
 
 # program launcher
 super + d
-	rofi -show run
+	rofi -show drun
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -20,11 +20,23 @@ super + Escape
     
 # swap caps and escape
 super + shift + s
-    $HOME/scripts/swapescape
+    swapescape
 
 # draw a dot in the middle of the screen
 super + shift + d
-    $HOME/scripts/drawdot
+    drawdot
+
+# Hide active window
+super + shift + i
+    xbasket hide
+
+# Select and show hidden window
+super + shift + u 
+    DMENU="rofi -dmenu" xbasket select
+
+# Play/pause music
+super + shift + l
+    playerctl play-pause
 
 #
 # bspwm hotkeys
@@ -52,15 +64,15 @@ super + g
 
 # increase gap size 
 super + shift + p
-    $HOME/scripts/gaps resize +2
+    gaps resize +2
 
 # decrease gap size 
 super + shift + o
-    $HOME/scripts/gaps resize -2
+    gaps resize -2
 
 # toggle gaps
 super + shift + g
-    $HOME/scripts/gaps toggle
+    gaps toggle
 
 #
 # state/flags
